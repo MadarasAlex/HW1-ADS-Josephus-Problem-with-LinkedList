@@ -19,6 +19,8 @@ public:
     int getSize() const ;
     void setSize(int);
     Node* getHead() const ;
+    int third(int );
 };
 
 #endif //JOSEPHUS_LINKEDLIST_H
+
