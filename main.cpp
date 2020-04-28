@@ -42,6 +42,11 @@ int main() {
 
         }
     }
-
+    int y;
+    cout<<endl<<"Introduce a value: ";cin>>y;
+    if(l.third(y)>0)
+        cout<<"Third element after "<<y<<" is: "<<l.third(y);
+    else cout<<y<<" is not in the list";
     return 0;
 }
+
