@@ -76,3 +76,16 @@ void LinkedList::remove(int val) {
     this->size-=1;
 
 }
+int LinkedList::third(int x)
+{
+    Node *start=getHead();
+    for(int i=1;i<this->size;i++)
+    {
+        if(start->getVal()==x)
+            return start->getNext()->getNext()->getNext()->getVal();
+        start=start->getNext();
+
+    }
+
+    return 0;
+}
