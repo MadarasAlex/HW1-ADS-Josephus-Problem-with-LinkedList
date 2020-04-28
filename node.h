@@ -1,17 +1,20 @@
-#include "node.h"
+#ifndef JOSEPHUS_NODE_H
+#define JOSEPHUS_NODE_H
 
-int Node::getVal() const {
-    return this->val;
-}
 
-void Node::setVal(int n) {
-    this->val= n;
-}
+#include <type_traits>
 
-void Node::setNext(Node * node) {
-    this->next = node;
-}
+class Node {
+private:
+    int val;
+    Node * next;
 
-Node *Node::getNext() const {
-    return this->next;
-}
+public:
+    void setVal(int)  ;
+    int getVal() const;
+    Node* getNext() const;
+    void setNext(Node*);
+};
+
+
+#endif //JOSEPHUS_NODE_H
